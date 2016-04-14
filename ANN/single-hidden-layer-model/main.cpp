@@ -1,14 +1,10 @@
 #include <iostream>
-#include <ctime>
 #include "neuralNetwork.h"
 #include "neuralNetworkTrainer.h"
 using namespace std;
 
 int main()
 {
-    //seed random number generator
-    srand( (unsigned int) time(0) );
-    
     //create data set reader and load data file
     dataReader d;
     d.loadDataFile("data_normalized.csv",16,1);
