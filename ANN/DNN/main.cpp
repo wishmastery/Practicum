@@ -155,7 +155,6 @@ Network unsupervisedPreTrainingMultipleLayers(
         layerVector.push_back(layer);
         //compute the mapping onto the features of the first hidden layer
         if (i != layers.size()-2) {
-            cout << "bug below" << endl;
             intermediateData = layer.evalLayer(0,intermediateData);
         }
     }
